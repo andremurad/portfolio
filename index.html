@@ -9,53 +9,180 @@
 
 <body data-theme="light">
 
+<!-- NAVBAR -->
 <header>
-    <strong>Portfólio</strong>
-    <button class="theme-toggle" onclick="toggleTheme()">Mudar Tema</button>
+    <nav class="navbar">
+        <strong class="logo">Portfólio</strong>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+
+      <button class="theme-switch" onclick="toggleTheme()" aria-label="Alternar tema">
+    <span class="switch-circle"></span>
+    <span class="switch-icon">🌙</span>
+</button>
+
+
+    </nav>
 </header>
 
-<section class="hero">
-    <img src="assets/img/hero.png" class="hero-img">
-    <h1>André Luiz Murad Filho</h1>
+
+<!-- INÍCIO / HERO -->
+<section id="inicio" class="hero">
+
+    <div class="glass-box">
+        <h1>Olá, visitante!</h1>
+        <h2>Meu nome é André</h2>
+
+        <p>
+            Sou um jovem desenvolvedor apaixonado por tecnologia, programação e inovação.
+            Busco sempre aprender mais, desenvolver projetos novos e evoluir como profissional.
+        </p>
+
+        <div class="social">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com" target="_blank" class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.53-1 1.82-2.2 3.75-2.2C20.4 8 24 10.42 24 16.2V24h-4v-7.2c0-3.2-1.2-5.4-4.2-5.4-2.2 0-3.4 1.5-4 2.9-.2.4-.2 1-.2 1.6V24h-4V8z"/>
+                </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/andremurad" target="_blank" class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.7-1.2-1.7-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.6 1.1 3.3.8.1-.7.4-1.1.7-1.4-2.6-.3-5.3-1.4-5.3-6.2 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.3a11.3 11.3 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.9-2.7 5.9-5.3 6.2.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12.1 12.1 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/>
+                </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5517991876253" target="_blank" class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 3.9A11.7 11.7 0 0 0 12 .5 11.6 11.6 0 0 0 .5 12a11.3 11.3 0 0 0 1.7 6L0 24l6.3-2a11.7 11.7 0 0 0 5.7 1.4h.1A11.7 11.7 0 0 0 24 12a11.4 11.4 0 0 0-4-8.1zM12 21.4c-1.8 0-3.5-.5-5-1.5l-.3-.2-3.7 1.2 1.2-3.6-.2-.3a9.4 9.4 0 1 1 8 4.5zM17 14.3c-.3-.1-1.7-.8-2-1s-.5-.1-.7.2l-.4.5c-.2 .2-.4 .3-.7 .1s-1.3-.5-2.4-1.6c-.9-.9-1.6-2-1.8-2.3s0-.5.1-.6l.5-.6c.2-.2.2-.4.2-.7s-.6-2-1-2.8c-.3-.7-.6-.7-.9-.7h-.7c-.2 0-.6 .1-.9 .4-.3 .4-1.2 1.2-1.2 3s1.2 3.5 1.4 3.8c.2 .3 2.3 3.6 5.5 5 3.3 1.3 3.3 .9 3.9 .9s2-.9 2.3-1.8 .3-1.7 .2-1.8-.3-.2-.6-.3z"/>
+                </svg>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre">
+    <h2>Sobre Mim</h2>
+
     <p>
-        Sou um jovem desenvolvedor apaixonado por tecnologia, programação e inovação.
-        Busco sempre aprender mais, desenvolver projetos novos e evoluir como profissional.
+        Sou um desenvolvedor focado em criar interfaces modernas, funcionais e eficientes.
+        Tenho grande interesse em desenvolvimento front-end, UI/UX e resolução de problemas com lógica de programação.
     </p>
 
-    <div class="social">
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://github.com/andremurad" target="_blank">GitHub</a>
-        <a href="https://wa.me/5517991876253" target="_blank">WhatsApp</a>
+    <p>
+        Atualmente estudo e desenvolvo projetos pessoais para aprimorar minhas habilidades
+        e busco oportunidades para crescer profissionalmente.
+    </p>
+</section>
+
+
+<!-- TECNOLOGIAS -->
+<section id="tecnologias" class="tecnologias">
+    <h2>Tecnologias que Utilizo</h2>
+
+    <div class="tech-grid">
+
+        <!-- HTML -->
+        <div class="tech">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#E34F26">
+                <path d="M3 3l1.8 18L12 23l7.2-2 1.8-18H3zm14.4 5.7h-9l.2 2.3h8.6l-.5 5.3-5.7 1.6-5.7-1.6-.3-2.9h2.7l.2 1.4 3.1.9 3.2-.9.3-3.1H6.6l-.7-7h12.2l-.7 3z"/>
+            </svg>
+            <span>HTML</span>
+        </div>
+
+        <!-- CSS -->
+        <div class="tech">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-css" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0zM4.59 7.498q-.908 0-1.455.508-.547.507-.547 1.484v3.106q0 .986.527 1.484t1.406.498q.576 0 1.016-.224.45-.225.703-.674.255-.45.254-1.114v-.185h-1.22v.176q0 .449-.186.683t-.527.235q-.372-.01-.557-.264-.186-.255-.186-.752V9.686q0-.547.166-.811.177-.264.577-.264.321 0 .517.225.195.224.195.693v.205h1.23V9.52q0-.674-.243-1.124a1.55 1.55 0 0 0-.664-.673q-.42-.225-1.006-.225m4.214-.01q-.586 0-1.006.244a1.67 1.67 0 0 0-.635.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.304.42.967.732l.469.215q.44.186.625.43.186.244.186.635 0 .478-.166.703-.157.224-.528.224-.36 0-.547-.244-.185-.243-.205-.752H6.87q.02.996.498 1.524.479.527 1.387.527t1.416-.518.508-1.484q0-.81-.332-1.289-.333-.479-1.045-.79l-.45-.196q-.39-.166-.556-.381-.165-.214-.166-.576 0-.4.166-.596.175-.195.508-.195.36 0 .508.234.156.234.175.703h1.123q-.03-.976-.498-1.484-.468-.518-1.308-.518m4.057 0q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518"/>
+</svg>
+            <span>CSS</span>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-javascript" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM9.053 7.596v3.127l-.007 1.752q0 .498-.186.752t-.556.263q-.342 0-.528-.234-.185-.234-.185-.684v-.175H6.37v.185q0 .665.253 1.113.255.45.703.674.44.225 1.016.225.88 0 1.406-.498.527-.498.527-1.485l.007-1.752V7.596zm3.808-.108q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518"/>
+</svg>
+            <span>JavaScript</span>
+        </div>
+
+
+
+        <!-- Bootstrap -->
+        <div class="tech">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+</svg>
+            <span>Bootstrap</span>
+        </div>
+
+        <!-- Python -->
+        <div class="tech">
+            <svg width="48" height="48" viewBox="0 0 24 24">
+                <path fill="#3776AB" d="M12 2.1c-1.1 0-2 .9-2 2v3.4c0 1.1-.9 2-2 2H3.5c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h4.6c1.1 0 2-.9 2-2V12h4v2.5c0 1.1.9 2 2 2h4.6c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2H16c-1.1 0-2-.9-2-2V4.1c0-1.1-.9-2-2-2z"/>
+                <circle cx="8.5" cy="5.5" r="1" fill="#fff"/>
+                <circle cx="15.5" cy="18.5" r="1" fill="#fff"/>
+            </svg>
+            <span>Python</span>
+        </div>
+
     </div>
 </section>
 
-<section class="projetos">
+
+<!-- PROJETOS -->
+<section id="projetos" class="projects-page">
     <h2>Meus Projetos</h2>
+    <p>Aqui estão alguns dos projetos que desenvolvi recentemente.</p>
 
-    <div class="grid">
-        <div class="card">
-            <img src="assets/img/project1.png" class="card-img">
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="assets/img/project1.png" alt="">
             <h3>Projeto 1</h3>
-            <p>Descrição curta do projeto.</p>
+            <p>Sistema simples focado em lógica e estrutura de programação.</p>
         </div>
 
-        <div class="card">
-            <img src="assets/img/project2.png" class="card-img">
+        <div class="project-card">
+            <img src="assets/img/project2.png" alt="">
             <h3>Projeto 2</h3>
-            <p>Projeto com foco em lógica e programação.</p>
+            <p>Aplicação desenvolvida com foco em design e responsividade.</p>
         </div>
 
-        <div class="card">
-            <img src="assets/img/project3.png" class="card-img">
+        <div class="project-card">
+            <img src="assets/img/project3.png" alt="">
             <h3>Projeto 3</h3>
-            <p>Você pode adicionar links, prints ou vídeos aqui.</p>
+            <p>Projeto pessoal integrando diferentes tecnologias.</p>
         </div>
+
     </div>
 </section>
 
+
+<!-- CONTATOS -->
+<section id="contatos" class="contatos">
+    <h2>Contatos</h2>
+    <p>Email: seuemail@dominio.com</p>
+</section>
+
+
+<!-- FOOTER -->
 <footer>
     © 2025 – Desenvolvido por André Murad
 </footer>
+
 
 <script src="script.js"></script>
 </body>
