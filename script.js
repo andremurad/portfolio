@@ -1,5 +1,14 @@
 function toggleTheme() {
     const body = document.body;
-    const current = body.getAttribute("data-theme");
-    body.setAttribute("data-theme", current === "light" ? "dark" : "light");
+    const icon = document.querySelector(".switch-icon");
+
+    const isLight = body.getAttribute("data-theme") === "light";
+
+    if (isLight) {
+        body.setAttribute("data-theme", "dark");
+        icon.textContent = "🌙"; // ícone lua
+    } else {
+        body.setAttribute("data-theme", "light");
+        icon.textContent = "☀️"; // ícone sol
+    }
 }
