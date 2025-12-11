@@ -263,6 +263,7 @@ body[data-theme="dark"] .navbar {
 
 .project-card img {
     width: 100%;
+    height:50%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -463,4 +464,10 @@ body[data-theme="light"] .theme-switch .switch-icon {
     left: 10px;
     color: #000;
     content: "☀️";
+}
+
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* mantém a cor do texto */
 }
